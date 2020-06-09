@@ -1,9 +1,11 @@
 import React from "react";
 import QuoteCard from "./QuotesCard";
 
-function QuotesContainer({ quotes }) {
+function QuotesContainer({ quotes, addToFavorites }) {
   const quotes1 = quotes.map((quote) => {
-    return <QuoteCard key={quote.id} quote={quote} />;
+    return (
+      <QuoteCard key={quote.id} quote={quote} addToFavorites={addToFavorites} />
+    );
   });
   return (
     <div className="quotes-container">

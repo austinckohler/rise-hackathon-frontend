@@ -1,11 +1,12 @@
 import React from "react";
 
-function EventsCard (props) {
+function EventsCard(props) {
   return (
-    <div>
-      <li>{event.text}</li>
-      <li>{event.author}</li>
-      
+    <div className="events-card">
+      <li>{props.event.name}</li>
+      <li>{props.event.date}</li>
+      <li>{props.event.desc}</li>
+      <img className="images" src={props.event.img} alt="event" />
     </div>
   );
 }
