@@ -1,10 +1,12 @@
 import React from "react";
 
-function QuotesCard({ quotes }) {
-  console.log(quotes);
+function QuotesCard({ quote }) {
+  console.log(quote);
   return (
     <div>
-      <li>{quotes.text}</li>
+      <li>{quote.text}</li>
+      <li>{quote.author}</li>
+      
     </div>
   );
 }

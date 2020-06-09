@@ -9,7 +9,9 @@ export class App extends Component {
   componentDidMount() {
     fetch("https://cors-anywhere.herokuapp.com/https://type.fit/api/quotes")
       .then((response) => response.json())
-      .then((quotes) => this.setState({ quotes }));
+      .then((quotes) => 
+      
+      this.setState({ quotes: quotes.slice(0,25) }));
   }
   render() {
     return (

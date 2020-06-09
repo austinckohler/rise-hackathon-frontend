@@ -3,7 +3,7 @@ import QuoteCard from "./QuotesCard";
 
 function QuotesContainer({ quotes }) {
   const quotes1 = quotes.map((quote) => {
-    return <QuoteCard key={quote.id} quote={quote.text} />;
+    return <QuoteCard key={quote.id} quote={quote} />;
   });
   return (
     <div className="quotes-container">
